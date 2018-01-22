@@ -6,13 +6,49 @@
     android:layout_height="match_parent"
     tools:context="example.codeclan.com.wordcounter.WordCounter">
 
-    <TextView
+    <EditText
+        android:id="@+id/text_entry_prompt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/text_entry_prompt"
+        android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.167" />
+
+    <Button
+        android:id="@+id/word_count_button"
+        android:layout_width="155dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onWordCountButtonClick"
+        android:text="@string/word_count_button"
+        app:layout_constraintEnd_toEndOf="@+id/text_entry_prompt"
+        app:layout_constraintStart_toStartOf="@+id/text_entry_prompt"
+        app:layout_constraintTop_toBottomOf="@+id/text_entry_prompt" />
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="161dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="236dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
